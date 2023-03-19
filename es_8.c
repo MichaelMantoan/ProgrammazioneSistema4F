@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
             scanf("%s", str);
             strcat(str, "\n");
             write(p1p2[1], str, strlen(str));
-        } while (strcmp(str, "esci") != 0);
+        } while (strcmp(str, "esci\n") != 0);
 
         printf("Esecuzione terminata\n");
         close(p1p2[1]);
